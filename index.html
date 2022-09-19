@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Slide show</title>
+    <script>
+        b = 0
+        function slideshow() {
+            switch (b) {
+                case 0: foto.src = "img/dim1.jpg";
+                    break;
+                case 1: foto.src = "img/dim2.jpg";
+                    break;
+                case 2: foto.src = "img/dim3.jpg";
+                    break;
+                case 3: foto.src = "img/dim4.jpg";
+                    break;
+                case 4: foto.src = "img/dim5.jpg";
+                    b = -1;
+            }
+            b++;
+        }
+    </script>
+</head>
+
+<body onload="setInterval('slideshow()',1000)" ;>
+    <p><img src="img/dim1.jpg" name="foto"> </p>
+
+
+</body>
+
+</html>
